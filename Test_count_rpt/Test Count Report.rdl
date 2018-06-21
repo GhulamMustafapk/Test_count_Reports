@@ -7,20 +7,16 @@
   <InitialPageName>Test Count Details</InitialPageName>
   <DataSources>
     <DataSource Name="IHTLABDATA">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=IHTLABM\LABSERVER;Initial Catalog=LABDATA</ConnectString>
-        <Prompt>Enter a user name and password to access the data source:</Prompt>
-      </ConnectionProperties>
+      <DataSourceReference>/IHTLABDATA</DataSourceReference>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>61aba9fe-8bee-4a1a-ae71-753bc21694c1</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="Test_count">
       <SharedDataSet>
         <SharedDataSetReference>/testcount_datasource</SharedDataSetReference>
-        <rd:ReportServerUrl>https://ihtlabm/ReportServer</rd:ReportServerUrl>
+        <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
       </SharedDataSet>
       <Fields>
         <Field Name="Date">
@@ -95,31 +91,31 @@
                   <Width>0.58333in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.8125in</Width>
+                  <Width>0.73958in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.75in</Width>
+                  <Width>0.63542in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.88542in</Width>
+                  <Width>0.77084in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.80209in</Width>
+                  <Width>0.77084in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.83333in</Width>
+                  <Width>0.71875in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.80208in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.83333in</Width>
+                  <Width>0.78126in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.70834in</Width>
+                  <Width>0.66667in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.69792in</Width>
+                  <Width>0.65625in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.8125in</Width>
@@ -196,10 +192,6 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <LeftBorder>
-                              <Color>LightBlue</Color>
-                              <Style>Solid</Style>
-                            </LeftBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <FontFamily />
                             <VerticalAlign>Middle</VerticalAlign>
@@ -640,10 +632,6 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <LeftBorder>
-                              <Color>LightBlue</Color>
-                              <Style>Solid</Style>
-                            </LeftBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <FontFamily />
                             <VerticalAlign>Middle</VerticalAlign>
@@ -1214,6 +1202,10 @@
                             <Border>
                               <Color>LightGrey</Color>
                             </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
                             <BottomBorder>
                               <Style>Solid</Style>
                             </BottomBorder>
@@ -1711,21 +1703,21 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.24667in</Height>
+                  <Height>0.25in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Grand_Total">
+                        <Textbox Name="Textbox6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Grand Total</Value>
+                                  <Value />
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1736,7 +1728,545 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <ToolTip>Grand Total</ToolTip>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!HIS.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox8">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!CYT.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!HEM.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!CHEM.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox15">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!SPC.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox16">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!UBIO.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox16</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox17">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!SER.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox18">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!PAR.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox19">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!MIC.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox20">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!MOL.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox20</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox21">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!BBANK.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox22">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!total.Value)</Value>
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>Teal</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.24667in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox45">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1766,7 +2296,7 @@
                                   <Value>=Sum(Fields!HIS.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1807,7 +2337,7 @@
                                   <Value>=Sum(Fields!CYT.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1848,7 +2378,7 @@
                                   <Value>=Sum(Fields!HEM.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1889,7 +2419,7 @@
                                   <Value>=Sum(Fields!CHEM.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1930,7 +2460,7 @@
                                   <Value>=Sum(Fields!SPC.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1971,7 +2501,7 @@
                                   <Value>=Sum(Fields!UBIO.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -2012,7 +2542,7 @@
                                   <Value>=Sum(Fields!SER.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -2053,7 +2583,7 @@
                                   <Value>=Sum(Fields!PAR.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -2094,7 +2624,7 @@
                                   <Value>=Sum(Fields!MIC.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -2135,7 +2665,7 @@
                                   <Value>=Sum(Fields!MOL.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -2176,7 +2706,7 @@
                                   <Value>=Sum(Fields!BBANK.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -2217,7 +2747,7 @@
                                   <Value>=Sum(Fields!total.Value)</Value>
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -2271,20 +2801,16 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>0.82292in</Size>
                     <CellContents>
-                      <Textbox Name="MonthName">
+                      <Textbox Name="Textbox4">
                         <CanGrow>true</CanGrow>
-                        <UserSort>
-                          <SortExpression>=Month(Fields!Date.Value)</SortExpression>
-                          <SortExpressionScope>Month</SortExpressionScope>
-                        </UserSort>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Month</Value>
+                                <Value>Year</Value>
                                 <Style>
                                   <FontFamily>verdana</FontFamily>
                                   <FontSize>7pt</FontSize>
@@ -2298,7 +2824,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <ToolTip>Month Name</ToolTip>
+                        <rd:DefaultName>Textbox4</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -2315,16 +2841,63 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <KeepTogether>true</KeepTogether>
+                      <TablixHeader>
+                        <Size>0.80207in</Size>
+                        <CellContents>
+                          <Textbox Name="MonthName">
+                            <CanGrow>true</CanGrow>
+                            <UserSort>
+                              <SortExpression>=Month(Fields!Date.Value)</SortExpression>
+                              <SortExpressionScope>Month</SortExpressionScope>
+                            </UserSort>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Month</Value>
+                                    <Style>
+                                      <FontFamily>verdana</FontFamily>
+                                      <FontSize>7pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                            </Paragraphs>
+                            <ToolTip>Month Name</ToolTip>
+                            <Style>
+                              <Border>
+                                <Style>None</Style>
+                              </Border>
+                              <BackgroundColor>SeaGreen</BackgroundColor>
+                              <VerticalAlign>Middle</VerticalAlign>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember>
+                          <KeepTogether>true</KeepTogether>
+                        </TablixMember>
+                      </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
                   <KeepWithGroup>After</KeepWithGroup>
                   <RepeatOnNewPage>true</RepeatOnNewPage>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Month">
+                  <Group Name="Group1">
                     <GroupExpressions>
-                      <GroupExpression>=Month(Fields!Date.Value)</GroupExpression>
+                      <GroupExpression>=(Year(Fields!Date.Value))</GroupExpression>
                     </GroupExpressions>
                     <PageBreak>
                       <BreakLocation>Between</BreakLocation>
@@ -2332,20 +2905,20 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Month(Fields!Date.Value)</Value>
+                      <Value>=(Year(Fields!Date.Value))</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>0.82292in</Size>
                     <CellContents>
-                      <Textbox Name="Months_Group">
+                      <Textbox Name="Group1">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=monthname(Month(Fields!Date.Value),false) &amp; (Year(Fields!Date.Value))</Value>
+                                <Value>=(Year(Fields!Date.Value))</Value>
                                 <Style>
                                   <FontFamily>verdana</FontFamily>
                                   <FontSize>7pt</FontSize>
@@ -2359,7 +2932,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <ToolTip>Date</ToolTip>
+                        <rd:DefaultName>Group1</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -2378,36 +2951,139 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="table1_Details_Group">
-                        <DataElementName>Detail</DataElementName>
+                      <Group Name="Month">
+                        <GroupExpressions>
+                          <GroupExpression>=Month(Fields!Date.Value)</GroupExpression>
+                        </GroupExpressions>
+                        <PageBreak>
+                          <BreakLocation>Between</BreakLocation>
+                        </PageBreak>
                       </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Month(Fields!Date.Value)</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixHeader>
+                        <Size>0.80207in</Size>
+                        <CellContents>
+                          <Textbox Name="Months_Group">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=monthname(Month(Fields!Date.Value),False)</Value>
+                                    <Style>
+                                      <FontFamily>verdana</FontFamily>
+                                      <FontSize>7pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>#333333</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                            </Paragraphs>
+                            <ToolTip>Date</ToolTip>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                              </Border>
+                              <BottomBorder>
+                                <Style>None</Style>
+                              </BottomBorder>
+                              <VerticalAlign>Top</VerticalAlign>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
                       <TablixMembers>
-                        <TablixMember />
+                        <TablixMember>
+                          <Group Name="table1_Details_Group">
+                            <DataElementName>Detail</DataElementName>
+                          </Group>
+                          <TablixMembers>
+                            <TablixMember />
+                          </TablixMembers>
+                          <DataElementName>Detail_Collection</DataElementName>
+                          <DataElementOutput>Output</DataElementOutput>
+                          <KeepTogether>true</KeepTogether>
+                        </TablixMember>
+                        <TablixMember>
+                          <KeepWithGroup>Before</KeepWithGroup>
+                        </TablixMember>
                       </TablixMembers>
-                      <DataElementName>Detail_Collection</DataElementName>
-                      <DataElementOutput>Output</DataElementOutput>
-                      <KeepTogether>true</KeepTogether>
                     </TablixMember>
                     <TablixMember>
+                      <TablixHeader>
+                        <Size>0.80207in</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox5">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Year Total</Value>
+                                    <Style>
+                                      <FontFamily>verdana</FontFamily>
+                                      <FontSize>7pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox5</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                              </Border>
+                              <BottomBorder>
+                                <Style>None</Style>
+                              </BottomBorder>
+                              <BackgroundColor>Teal</BackgroundColor>
+                              <VerticalAlign>Top</VerticalAlign>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
                       <KeepWithGroup>Before</KeepWithGroup>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>0.82292in</Size>
                     <CellContents>
-                      <Textbox Name="Empty">
+                      <Textbox Name="Grand_Total3">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>Grand Total</Value>
                                 <Style>
                                   <FontFamily>verdana</FontFamily>
-                                  <FontSize>8pt</FontSize>
+                                  <FontSize>7pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                   <Color>White</Color>
                                 </Style>
@@ -2418,10 +3094,15 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
+                        <ToolTip>Grand Total</ToolTip>
                         <Style>
                           <Border>
-                            <Style>None</Style>
+                            <Color>LightGrey</Color>
                           </Border>
+                          <BottomBorder>
+                            <Style>Solid</Style>
+                          </BottomBorder>
+                          <BackgroundColor>SeaGreen</BackgroundColor>
                           <VerticalAlign>Middle</VerticalAlign>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
@@ -2432,24 +3113,70 @@
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>
-                    <TablixMember />
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>0.80207in</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox46">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value />
+                                    <Style>
+                                      <FontFamily>verdana</FontFamily>
+                                      <FontSize>7pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox46</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                              </Border>
+                              <BottomBorder>
+                                <Style>Solid</Style>
+                              </BottomBorder>
+                              <BackgroundColor>SeaGreen</BackgroundColor>
+                              <VerticalAlign>Middle</VerticalAlign>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
                   </TablixMembers>
                   <KeepWithGroup>Before</KeepWithGroup>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <RepeatColumnHeaders>true</RepeatColumnHeaders>
-            <DataSetName>DataSet1</DataSetName>
+            <DataSetName>Test_count</DataSetName>
             <Left>0.01042in</Left>
-            <Height>1.02084in</Height>
-            <Width>11.09375in</Width>
+            <Height>1.27084in</Height>
+            <Width>11.13542in</Width>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>1.07292in</Height>
+        <Height>1.52084in</Height>
         <Style />
       </Body>
-      <Width>11.10417in</Width>
+      <Width>11.14584in</Width>
       <Page>
         <PageHeader>
           <Height>0.60416in</Height>
@@ -2465,6 +3192,7 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Test Count Details Report</Value>
+                      <ToolTip>Test Count Details Report</ToolTip>
                       <Style>
                         <FontFamily>Calibri</FontFamily>
                         <FontSize>16pt</FontSize>
@@ -2477,7 +3205,16 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Department of Pathology,</Value>
+                      <Value>Department of Pathology</Value>
+                      <ToolTip>Department of Pathology</ToolTip>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>,</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
@@ -2492,7 +3229,16 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Ittefaq Hospital Trust, Lahore </Value>
+                      <Value>Ittefaq Hospital Trust, Lahore</Value>
+                      <ToolTip>Ittefaq Hospital Trust, Lahore</ToolTip>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value xml:space="preserve"> </Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
@@ -2530,13 +3276,17 @@
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
+                        <Color>DimGray</Color>
                       </Style>
                     </TextRun>
                     <TextRun>
+                      <Label>PageNumber</Label>
                       <Value>=Globals!PageNumber</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>DimGray</Color>
                       </Style>
                     </TextRun>
                     <TextRun>
@@ -2544,13 +3294,18 @@
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
+                        <Color>DimGray</Color>
                       </Style>
                     </TextRun>
                     <TextRun>
+                      <Label>TotalPages</Label>
                       <Value>=Globals!TotalPages</Value>
+                      <ToolTip>Total Pages</ToolTip>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>DimGray</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -2561,20 +3316,14 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>User ID: </Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
+                      <Label>UserID</Label>
                       <Value>=User!UserID</Value>
+                      <ToolTip>User ID</ToolTip>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
-                        <Color>DarkGreen</Color>
+                        <Color>DimGray</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -2585,19 +3334,15 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Run at: </Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
+                      <Label>Execution Date and Time</Label>
                       <Value>=Globals!ExecutionTime</Value>
+                      <ToolTip>Report Execution date and Time </ToolTip>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
+                        <Format>dddd, MMMM d, yyyy h:mm:ss tt</Format>
+                        <Color>DimGray</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -2654,6 +3399,6 @@
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>https://ihtlabm/ReportServer</rd:ReportServerUrl>
+  <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
   <rd:ReportID>35a1b9cb-9faa-444b-9a93-7205178e5843</rd:ReportID>
 </Report>
