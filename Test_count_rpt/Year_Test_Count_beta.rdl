@@ -3,7 +3,7 @@
   <Description>Test Count Report</Description>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <Author>Ghulam Mustafa</Author>
-  <AutoRefresh>240</AutoRefresh>
+  <AutoRefresh>300</AutoRefresh>
   <InitialPageName>Test Count Details</InitialPageName>
   <DataSources>
     <DataSource Name="IHTLABDATA">
@@ -89,7 +89,7 @@
                   <Width>0.95833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.61458in</Width>
+                  <Width>0.625in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.58333in</Width>
@@ -98,13 +98,13 @@
                   <Width>0.73958in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.63542in</Width>
+                  <Width>0.80208in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.77084in</Width>
+                  <Width>0.90626in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.77084in</Width>
+                  <Width>0.84375in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.71875in</Width>
@@ -113,7 +113,7 @@
                   <Width>0.80208in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.70833in</Width>
+                  <Width>0.86458in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.66667in</Width>
@@ -122,7 +122,7 @@
                   <Width>0.65625in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.8125in</Width>
+                  <Width>0.91667in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -196,10 +196,6 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <LeftBorder>
-                              <Color>LightBlue</Color>
-                              <Style>Solid</Style>
-                            </LeftBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <FontFamily />
                             <VerticalAlign>Middle</VerticalAlign>
@@ -640,10 +636,6 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <LeftBorder>
-                              <Color>LightBlue</Color>
-                              <Style>Solid</Style>
-                            </LeftBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <FontFamily />
                             <VerticalAlign>Middle</VerticalAlign>
@@ -658,534 +650,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.20667in</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Date">
-                          <CanGrow>true</CanGrow>
-                          <CanShrink>true</CanShrink>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Date.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Format>d-MM-yyyy</Format>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Date</rd:DefaultName>
-                          <ToolTip>Month date</ToolTip>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Histopathology">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!HIS.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <ToolTip>Histopathology</ToolTip>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="CYTO">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!CYT.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <ToolTip>Cytology</ToolTip>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="HEM">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!HEM.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>HEM</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="CHEM">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!CHEM.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>CHEM</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="SPC">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!SPC.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>SPC</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="UBIO">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!UBIO.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>UBIO</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="SER1">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!SER.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>SER1</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="PAR">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!PAR.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>PAR</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="MIC">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!MIC.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>MIC</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="MOL">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!MOL.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>MOL</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="BBANK">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!BBANK.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>BBANK</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Daytotal">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!total.Value</Value>
-                                  <Style>
-                                    <FontFamily>verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <ToolTip>Day Total</ToolTip>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.24667in</Height>
+                  <Height>0.21542in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1200,7 +665,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1212,16 +676,18 @@
                           <ToolTip>Month Total</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
                             <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
-                              <Width>1pt</Width>
+                              <Width>0.25pt</Width>
                             </TopBorder>
                             <BottomBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1244,7 +710,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1256,17 +721,18 @@
                           <ToolTip>Month Total of Histology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
                             <BottomBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <LeftBorder>
-                              <Color>Orange</Color>
-                              <Style>Solid</Style>
-                            </LeftBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1289,7 +755,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1301,12 +766,18 @@
                           <ToolTip>Month Total Cytology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1329,7 +800,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1340,12 +810,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1368,7 +844,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1379,12 +854,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1407,7 +888,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1418,12 +898,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1446,7 +932,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1457,12 +942,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1485,7 +976,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1496,12 +986,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1524,7 +1020,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1535,12 +1030,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1563,7 +1064,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1574,12 +1074,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1602,7 +1108,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1613,12 +1118,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1641,7 +1152,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1652,12 +1162,18 @@
                           </Paragraphs>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1680,7 +1196,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1692,17 +1207,18 @@
                           <ToolTip>Month Total</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
                             <BottomBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <LeftBorder>
-                              <Color>Orange</Color>
-                              <Style>Solid</Style>
-                            </LeftBorder>
-                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1719,7 +1235,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox6">
+                        <Textbox Name="Textbox57">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1730,8 +1246,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1740,15 +1254,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <rd:DefaultName>Textbox57</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1760,7 +1281,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox7">
+                        <Textbox Name="Textbox58">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1771,8 +1292,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1781,15 +1300,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <rd:DefaultName>Textbox58</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1801,7 +1327,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox8">
+                        <Textbox Name="Textbox59">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1812,8 +1338,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1822,15 +1346,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <rd:DefaultName>Textbox59</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1842,7 +1373,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox9">
+                        <Textbox Name="Textbox60">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1853,8 +1384,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1863,15 +1392,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <rd:DefaultName>Textbox60</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1883,7 +1419,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox14">
+                        <Textbox Name="Textbox61">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1894,8 +1430,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1904,15 +1438,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <rd:DefaultName>Textbox61</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1924,7 +1465,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox15">
+                        <Textbox Name="Textbox62">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1935,8 +1476,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1945,15 +1484,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <rd:DefaultName>Textbox62</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1965,7 +1511,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox16">
+                        <Textbox Name="Textbox63">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1976,8 +1522,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1986,15 +1530,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox16</rd:DefaultName>
+                          <rd:DefaultName>Textbox63</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2006,7 +1557,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox17">
+                        <Textbox Name="Textbox64">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2017,8 +1568,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2027,15 +1576,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <rd:DefaultName>Textbox64</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2047,7 +1603,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox18">
+                        <Textbox Name="Textbox65">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2058,8 +1614,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2068,15 +1622,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <rd:DefaultName>Textbox65</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2088,7 +1649,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox19">
+                        <Textbox Name="Textbox66">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2099,8 +1660,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2109,15 +1668,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <rd:DefaultName>Textbox66</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2129,7 +1695,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox20">
+                        <Textbox Name="Textbox67">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2140,8 +1706,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2150,15 +1714,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox20</rd:DefaultName>
+                          <rd:DefaultName>Textbox67</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2170,7 +1741,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox21">
+                        <Textbox Name="Textbox68">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2181,8 +1752,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2191,15 +1760,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <rd:DefaultName>Textbox68</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2211,7 +1787,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox22">
+                        <Textbox Name="Textbox69">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2222,8 +1798,6 @@
                                   <Style>
                                     <FontFamily>verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2232,15 +1806,22 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <rd:DefaultName>Textbox69</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
+                            <TopBorder>
+                              <Color>Silver</Color>
                               <Style>Solid</Style>
+                              <Width>0.25pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Silver</Color>
+                              <Style>Solid</Style>
+                              <Width>0.25pt</Width>
                             </BottomBorder>
-                            <BackgroundColor>Teal</BackgroundColor>
+                            <BackgroundColor>Orange</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2281,11 +1862,8 @@
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2322,11 +1900,8 @@
                           <ToolTip>Grand Total of Histology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2363,11 +1938,8 @@
                           <ToolTip>Grand Total Cytology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2404,11 +1976,8 @@
                           <ToolTip>Grand Total Hematology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2445,11 +2014,8 @@
                           <ToolTip>Grand Total Chemistry</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2486,11 +2052,8 @@
                           <ToolTip>Grand Total SpecialChemistry</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2527,11 +2090,8 @@
                           <ToolTip>Grand Total Urine Biochemistry</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2568,11 +2128,8 @@
                           <ToolTip>Grand Total Serology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2609,11 +2166,8 @@
                           <ToolTip>Grand Total Parasitology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2650,11 +2204,8 @@
                           <ToolTip>Grand Total Microbiology</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2691,11 +2242,8 @@
                           <ToolTip>Grand Total Molecular</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2732,11 +2280,8 @@
                           <ToolTip>Grand Total Blood Bank</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2773,11 +2318,8 @@
                           <ToolTip>Grand Total</ToolTip>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <BackgroundColor>SeaGreen</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2794,7 +2336,11 @@
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                  </Visibility>
+                </TablixMember>
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -2813,7 +2359,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.82292in</Size>
+                    <Size>0.8125in</Size>
                     <CellContents>
                       <Textbox Name="Textbox4">
                         <CanGrow>true</CanGrow>
@@ -2854,14 +2400,10 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.80207in</Size>
+                        <Size>1.27083in</Size>
                         <CellContents>
                           <Textbox Name="MonthName">
                             <CanGrow>true</CanGrow>
-                            <UserSort>
-                              <SortExpression>=Month(Fields!Date.Value)</SortExpression>
-                              <SortExpressionScope>Month</SortExpressionScope>
-                            </UserSort>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
@@ -2907,7 +2449,7 @@
                   <RepeatOnNewPage>true</RepeatOnNewPage>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Group1">
+                  <Group Name="Year">
                     <GroupExpressions>
                       <GroupExpression>=(Year(Fields!Date.Value))</GroupExpression>
                     </GroupExpressions>
@@ -2918,7 +2460,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>0.82292in</Size>
+                    <Size>0.8125in</Size>
                     <CellContents>
                       <Textbox Name="Group1">
                         <CanGrow>true</CanGrow>
@@ -2944,12 +2486,19 @@
                         <rd:DefaultName>Group1</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
-                          </Border>
-                          <BottomBorder>
                             <Style>None</Style>
+                          </Border>
+                          <TopBorder>
+                            <Color>Silver</Color>
+                            <Style>Solid</Style>
+                            <Width>0.25pt</Width>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Silver</Color>
+                            <Style>Solid</Style>
+                            <Width>0.25pt</Width>
                           </BottomBorder>
-                          <VerticalAlign>Top</VerticalAlign>
+                          <VerticalAlign>Middle</VerticalAlign>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -2964,9 +2513,6 @@
                         <GroupExpressions>
                           <GroupExpression>=Month(Fields!Date.Value)</GroupExpression>
                         </GroupExpressions>
-                        <PageBreak>
-                          <BreakLocation>Between</BreakLocation>
-                        </PageBreak>
                       </Group>
                       <SortExpressions>
                         <SortExpression>
@@ -2974,7 +2520,7 @@
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>0.80207in</Size>
+                        <Size>1.27083in</Size>
                         <CellContents>
                           <Textbox Name="Months_Group">
                             <CanGrow>true</CanGrow>
@@ -2993,19 +2539,26 @@
                                   </TextRun>
                                 </TextRuns>
                                 <Style>
-                                  <TextAlign>Center</TextAlign>
+                                  <TextAlign>Left</TextAlign>
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
                             <ToolTip>Date</ToolTip>
                             <Style>
                               <Border>
-                                <Color>LightGrey</Color>
-                              </Border>
-                              <BottomBorder>
                                 <Style>None</Style>
+                              </Border>
+                              <TopBorder>
+                                <Color>Silver</Color>
+                                <Style>Solid</Style>
+                                <Width>0.25pt</Width>
+                              </TopBorder>
+                              <BottomBorder>
+                                <Color>Silver</Color>
+                                <Style>Solid</Style>
+                                <Width>0.25pt</Width>
                               </BottomBorder>
-                              <VerticalAlign>Top</VerticalAlign>
+                              <VerticalAlign>Middle</VerticalAlign>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -3015,57 +2568,60 @@
                         </CellContents>
                       </TablixHeader>
                       <TablixMembers>
-                        <TablixMember>
-                          <Group Name="table1_Details_Group">
-                            <DataElementName>Detail</DataElementName>
-                          </Group>
-                          <TablixMembers>
-                            <TablixMember />
-                          </TablixMembers>
-                          <DataElementName>Detail_Collection</DataElementName>
-                          <DataElementOutput>Output</DataElementOutput>
-                          <KeepTogether>true</KeepTogether>
-                        </TablixMember>
-                        <TablixMember>
-                          <KeepWithGroup>Before</KeepWithGroup>
-                        </TablixMember>
+                        <TablixMember />
                       </TablixMembers>
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.80207in</Size>
+                        <Size>1.27083in</Size>
                         <CellContents>
-                          <Textbox Name="Textbox5">
+                          <Textbox Name="Textbox56">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Year Total</Value>
+                                    <Value>Year Total for </Value>
                                     <Style>
                                       <FontFamily>verdana</FontFamily>
                                       <FontSize>7pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
-                                      <Color>White</Color>
+                                      <Color>#333333</Color>
+                                    </Style>
+                                  </TextRun>
+                                  <TextRun>
+                                    <Value>=(Year(Fields!Date.Value))</Value>
+                                    <Style>
+                                      <FontFamily>verdana</FontFamily>
+                                      <FontSize>7pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>#333333</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
                                 <Style>
-                                  <TextAlign>Center</TextAlign>
+                                  <TextAlign>Left</TextAlign>
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox5</rd:DefaultName>
+                            <rd:DefaultName>Textbox56</rd:DefaultName>
                             <Style>
                               <Border>
-                                <Color>LightGrey</Color>
-                              </Border>
-                              <BottomBorder>
                                 <Style>None</Style>
+                              </Border>
+                              <TopBorder>
+                                <Color>Silver</Color>
+                                <Style>Solid</Style>
+                                <Width>0.25pt</Width>
+                              </TopBorder>
+                              <BottomBorder>
+                                <Color>Silver</Color>
+                                <Style>Solid</Style>
+                                <Width>0.25pt</Width>
                               </BottomBorder>
-                              <BackgroundColor>Teal</BackgroundColor>
-                              <VerticalAlign>Top</VerticalAlign>
+                              <BackgroundColor>Orange</BackgroundColor>
+                              <VerticalAlign>Middle</VerticalAlign>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -3080,7 +2636,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.82292in</Size>
+                    <Size>0.8125in</Size>
                     <CellContents>
                       <Textbox Name="Grand_Total3">
                         <CanGrow>true</CanGrow>
@@ -3106,11 +2662,8 @@
                         <ToolTip>Grand Total</ToolTip>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
+                            <Style>None</Style>
                           </Border>
-                          <BottomBorder>
-                            <Style>Solid</Style>
-                          </BottomBorder>
                           <BackgroundColor>SeaGreen</BackgroundColor>
                           <VerticalAlign>Middle</VerticalAlign>
                           <PaddingLeft>2pt</PaddingLeft>
@@ -3124,7 +2677,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.80207in</Size>
+                        <Size>1.27083in</Size>
                         <CellContents>
                           <Textbox Name="Textbox46">
                             <CanGrow>true</CanGrow>
@@ -3150,11 +2703,8 @@
                             <rd:DefaultName>Textbox46</rd:DefaultName>
                             <Style>
                               <Border>
-                                <Color>LightGrey</Color>
+                                <Style>None</Style>
                               </Border>
-                              <BottomBorder>
-                                <Style>Solid</Style>
-                              </BottomBorder>
                               <BackgroundColor>SeaGreen</BackgroundColor>
                               <VerticalAlign>Middle</VerticalAlign>
                               <PaddingLeft>2pt</PaddingLeft>
@@ -3177,21 +2727,32 @@
             <RepeatColumnHeaders>true</RepeatColumnHeaders>
             <DataSetName>DataSet1</DataSetName>
             <Left>0.01042in</Left>
-            <Height>1.27084in</Height>
-            <Width>11.06249in</Width>
+            <Height>1.03292in</Height>
+            <Width>12.16666in</Width>
             <Style />
           </Tablix>
         </ReportItems>
         <Height>1.52084in</Height>
         <Style />
       </Body>
-      <Width>11.14584in</Width>
+      <Width>12.17708in</Width>
       <Page>
         <PageHeader>
-          <Height>0.60416in</Height>
+          <Height>0.97097in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
+            <Image Name="Image">
+              <Source>Embedded</Source>
+              <Value>IHTLogo</Value>
+              <Height>0.78125in</Height>
+              <Width>0.78125in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
             <Textbox Name="textbox1">
               <CanGrow>true</CanGrow>
               <CanShrink>true</CanShrink>
@@ -3200,23 +2761,10 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Test Count Details Report</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>16pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Department of Pathology,</Value>
+                      <Value>Department of Pathology</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontSize>14pt</FontSize>
                         <FontWeight>Normal</FontWeight>
                       </Style>
                     </TextRun>
@@ -3228,11 +2776,42 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Ittefaq Hospital Trust, Lahore </Value>
+                      <Value>Ittefaq Hospital (Trust), Lahore </Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Test Count Report</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dddd, MMMM d, yyyy h:mm:ss tt</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -3242,9 +2821,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>textbox1</rd:DefaultName>
-              <Left>0.01042in</Left>
-              <Height>0.57638in</Height>
-              <Width>6.69791in</Width>
+              <Left>0.80903in</Left>
+              <Height>0.78125in</Height>
+              <Width>3.62847in</Width>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -3255,7 +2835,19 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Textbox2">
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>0.83333in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox3">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -3289,51 +2881,11 @@
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
                     <TextRun>
-                      <Value>User ID: </Value>
+                      <Value xml:space="preserve"> </Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=User!UserID</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                        <Color>DarkGreen</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Run at: </Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=Globals!ExecutionTime</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -3342,16 +2894,15 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Left>7.03124in</Left>
-              <Height>0.56249in</Height>
-              <Width>4.07292in</Width>
-              <ZIndex>1</ZIndex>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.5486in</Top>
+              <Left>9.24875in</Left>
+              <Height>0.25in</Height>
+              <Width>2.92833in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
-                <VerticalAlign>Bottom</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
@@ -3364,7 +2915,7 @@
               <Style>None</Style>
             </Border>
           </Style>
-        </PageHeader>
+        </PageFooter>
         <PageHeight>8.27in</PageHeight>
         <PageWidth>11.69in</PageWidth>
         <LeftMargin>0.2in</LeftMargin>
@@ -3387,9 +2938,22 @@
       <Value>Ghulam Mustafa</Value>
     </CustomProperty>
   </CustomProperties>
+  <EmbeddedImages>
+    <EmbeddedImage Name="IHTLogo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>https://ihtlabm/ReportServer</rd:ReportServerUrl>
+  <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
   <rd:ReportID>35a1b9cb-9faa-444b-9a93-7205178e5843</rd:ReportID>
 </Report>

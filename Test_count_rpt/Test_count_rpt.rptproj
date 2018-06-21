@@ -55,9 +55,9 @@
     <DataSource Include="IHTLABDATA.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="TestCountReport_beta.rdl" />
     <Report Include="TestCountReport_old.rdl" />
-    <Report Include="TestCountReport_production.rdl" />
-    <Report Include="Year_Test_Count_production.rdl" />
+    <Report Include="Year_Test_Count_beta.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
