@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Test_count_rpt", "Test_count_rpt\Test_count_rpt.rptproj", "{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.Debug|Default.ActiveCfg = Debug
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.Debug|Default.Build.0 = Debug
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.Debug|Default.Deploy.0 = Debug
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.DebugLocal|Default.Build.0 = DebugLocal
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.Release|Default.ActiveCfg = Release
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.Release|Default.Build.0 = Release
+		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C79A57EB-5080-44DB-89A9-BFF8D6EB8568}
+	EndGlobalSection
+EndGlobal
