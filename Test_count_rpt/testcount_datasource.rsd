@@ -88,7 +88,7 @@ FROM
         <DataField>BBANK</DataField>
         <rd:TypeName>System.Int64</rd:TypeName>
       </Field>
-      <Field Name="total">
+      <Field Name="Total">
         <DataField>total</DataField>
         <rd:TypeName>System.Int64</rd:TypeName>
       </Field>
