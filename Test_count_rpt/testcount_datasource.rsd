@@ -94,5 +94,5 @@ FROM
       </Field>
     </Fields>
   </DataSet>
-  <rd:ReportServerUrl>https://ihtlabm/ReportServer</rd:ReportServerUrl>
+  <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
 </SharedDataSet>
