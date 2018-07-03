@@ -1,2 +1,3 @@
-# Test_count_Reports
-IHT Test Count Reports
+# Test count Reports
+IHT Test Count Reports project for use in IHT
+Project Manager- Ghulam Mustafa
