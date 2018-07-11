@@ -10,6 +10,7 @@ Global
 		Debug|Default = Debug|Default
 		DebugLocal|Default = DebugLocal|Default
 		Release|Default = Release|Default
+		Description = Test count Project for IHT
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}.Debug|Default.ActiveCfg = Debug

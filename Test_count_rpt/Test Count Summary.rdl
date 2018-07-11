@@ -2728,7 +2728,7 @@
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>1.52084in</Height>
+        <Height>1.09945in</Height>
         <Style />
       </Body>
       <Width>12.17708in</Width>
@@ -2782,6 +2782,11 @@
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
                     <TextRun>
                       <Label>Execution Date and Time</Label>
                       <Value>=Globals!ExecutionTime</Value>
@@ -2800,7 +2805,7 @@
               </Paragraphs>
               <rd:DefaultName>textbox1</rd:DefaultName>
               <Left>0.69792in</Left>
-              <Height>0.57638in</Height>
+              <Height>0.70138in</Height>
               <Width>5.88541in</Width>
               <Style>
                 <Border>
@@ -2868,30 +2873,6 @@
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Color>DarkGreen</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Run at: </Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=Globals!ExecutionTime</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                        <Format>dddd, MMMM d, yyyy h:mm:ss tt</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
