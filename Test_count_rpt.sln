@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Test_count_rpt", "Test_count_rpt\Test_count_rpt.rptproj", "{50A2F114-FA13-4BA1-817A-A8649DD9E1DB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC886FFC-1298-4E7A-90E5-5AF5278838BF}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\LabManager\Documents\SQL Server Management Studio\countaggregates.sql = C:\Users\LabManager\Documents\SQL Server Management Studio\countaggregates.sql
+		C:\Users\LabManager\Documents\SQL Server Management Studio\top10_testcounts.sql = C:\Users\LabManager\Documents\SQL Server Management Studio\top10_testcounts.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
