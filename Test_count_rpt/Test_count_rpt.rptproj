@@ -49,10 +49,10 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSet Include="testcount_datasource.rsd" />
+    <DataSet Include="testcount.rsd" />
   </ItemGroup>
   <ItemGroup>
-    <DataSource Include="IHTLABDATA.rds" />
+    <DataSource Include="LABDATA.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="Report_Template.rdl" />

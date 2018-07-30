@@ -6,17 +6,17 @@
   <AutoRefresh>300</AutoRefresh>
   <InitialPageName>Test Count Details</InitialPageName>
   <DataSources>
-    <DataSource Name="IHTLABDATA">
-      <DataSourceReference>/IHTLABDATA</DataSourceReference>
+    <DataSource Name="LABDATA">
+      <DataSourceReference>LABDATA</DataSourceReference>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>61aba9fe-8bee-4a1a-ae71-753bc21694c1</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="testcount">
       <SharedDataSet>
-        <SharedDataSetReference>/testcount_datasource</SharedDataSetReference>
-        <rd:ReportServerUrl>https://ihtlabm/ReportServer</rd:ReportServerUrl>
+        <SharedDataSetReference>testcount</SharedDataSetReference>
+        <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
       </SharedDataSet>
       <Fields>
         <Field Name="Date">
@@ -2721,7 +2721,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <RepeatColumnHeaders>true</RepeatColumnHeaders>
-            <DataSetName>DataSet1</DataSetName>
+            <DataSetName>testcount</DataSetName>
             <Left>0.01042in</Left>
             <Height>1.03292in</Height>
             <Width>12.16666in</Width>
