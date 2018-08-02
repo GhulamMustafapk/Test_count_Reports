@@ -55,7 +55,6 @@
     <DataSource Include="LABDATA.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="Report_Template.rdl" />
     <Report Include="Test Count Report.rdl" />
     <Report Include="Test Count Summary.rdl" />
   </ItemGroup>
