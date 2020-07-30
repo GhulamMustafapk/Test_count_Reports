@@ -3508,14 +3508,14 @@
                       <TablixHeader>
                         <Size>0.83333in</Size>
                         <CellContents>
-                          <Textbox Name="MonthName">
+                          <Textbox Name="Textbox3">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Month</Value>
+                                    <Value />
                                     <Style>
                                       <FontFamily>verdana</FontFamily>
                                       <FontSize>7pt</FontSize>
@@ -3529,7 +3529,7 @@
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <ToolTip>Month Name</ToolTip>
+                            <rd:DefaultName>Textbox3</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>None</Style>
@@ -3682,6 +3682,9 @@
                           </TablixMembers>
                         </TablixMember>
                       </TablixMembers>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                      </Visibility>
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
@@ -3791,6 +3794,9 @@
                           </TablixHeader>
                         </TablixMember>
                       </TablixMembers>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                      </Visibility>
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
@@ -3803,14 +3809,6 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Year Total for </Value>
-                                    <Style>
-                                      <FontFamily>verdana</FontFamily>
-                                      <FontSize>7pt</FontSize>
-                                      <FontWeight>Bold</FontWeight>
-                                    </Style>
-                                  </TextRun>
-                                  <TextRun>
                                     <Value>=Year(Fields!Date.Value)</Value>
                                     <Style>
                                       <FontFamily>verdana</FontFamily>
@@ -3820,7 +3818,7 @@
                                   </TextRun>
                                 </TextRuns>
                                 <Style>
-                                  <TextAlign>Left</TextAlign>
+                                  <TextAlign>Center</TextAlign>
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
@@ -3913,7 +3911,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Daily Average</Value>
+                                <Value>Day Average</Value>
                                 <Style>
                                   <FontFamily>verdana</FontFamily>
                                   <FontSize>7pt</FontSize>
@@ -4129,7 +4127,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Test Count Summary Report </Value>
+                      <Value>Test Count Summary Report by Year</Value>
                       <Style>
                         <FontFamily>Calibri</FontFamily>
                         <FontSize>16pt</FontSize>
@@ -4336,6 +4334,6 @@ BwKpz8gTPNYC2r33Ni1dyZsr3UB5+RU0ZKQP7TweSas3BVJMguDiaLB52yNuL3z/s5C+mHtHvMV9X/xl
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
+  <rd:ReportServerUrl>https://ihtlabm/ReportServer</rd:ReportServerUrl>
   <rd:ReportID>35a1b9cb-9faa-444b-9a93-7205178e5843</rd:ReportID>
 </Report>

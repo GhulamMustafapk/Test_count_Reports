@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT0S" SolutionTotalViewTime="PT9M41.4192088S" SolutionTotalDebugTime="PT0S">
+  <FileVersion>
+    <Major>1</Major>
+    <Minor>0</Minor>
+  </FileVersion>
+  <SolutionFolder>D:\Projects\Test_count_rpt</SolutionFolder>
+  <SessionTimeList />
+  <LastSessionTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT9M41.4522209S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>D:\Projects\Test_count_rpt\Test_count_rpt\Test Count Report.rdl</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Projects\Test_count_rpt\Test_count_rpt\Test_count_rpt.rptproj</ProjectName>
+      <CreatedDate>2018-09-07T14:44:52.6190501+05:00</CreatedDate>
+      <ViewedBy>LabManager</ViewedBy>
+    </DevTrackerDataItem>
+  </LastSessionTimeList>
+  <TotalTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT9M41.4192088S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>D:\Projects\Test_count_rpt\Test_count_rpt\Test Count Report.rdl</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Projects\Test_count_rpt\Test_count_rpt\Test_count_rpt.rptproj</ProjectName>
+      <CreatedDate>2018-09-07T14:44:52.6190501+05:00</CreatedDate>
+      <ViewedBy>LabManager</ViewedBy>
+    </DevTrackerDataItem>
+  </TotalTimeList>
+  <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT9M41.4202216S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>D:\Projects\Test_count_rpt\Test_count_rpt\Test Count Report.rdl</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Projects\Test_count_rpt\Test_count_rpt\Test_count_rpt.rptproj</ProjectName>
+      <CreatedDate>2018-09-07T14:44:52.6190501+05:00</CreatedDate>
+      <ViewedBy>LabManager</ViewedBy>
+    </DevTrackerDataItem>
+  </HistoryTimeList>
+</DevTrackerData>

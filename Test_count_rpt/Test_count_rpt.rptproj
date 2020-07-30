@@ -57,8 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Report_Template.rdl" />
+    <Report Include="Test Count Excl Blood Bank.rdl" />
+    <Report Include="Test Count Excl_BB.rdl" />
     <Report Include="Test Count Report.rdl" />
+    <Report Include="Test Count Summary by Year.rdl" />
+    <Report Include="Test Count Summary Excl Blood Bank.rdl" />
     <Report Include="Test Count Summary.rdl" />
+    <Report Include="Test details.rdl" />
+    <Report Include="Workload Summary.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

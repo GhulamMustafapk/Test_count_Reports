@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="LABDATA">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=IHTLABM\LABSERVER;Initial Catalog=LABDATA</ConnectString>
+    <ConnectString>Data Source=IHTLAbsrv1\LABSERVER;Initial Catalog=LABDATA</ConnectString>
   </ConnectionProperties>
   <DataSourceID>a592aa15-0f31-436e-ab39-fae52eae5f7b</DataSourceID>
 </RptDataSource>
