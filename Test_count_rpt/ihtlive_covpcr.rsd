@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>/ihtlive</DataSourceReference>
+      <CommandText>Select p.REGNUM,
+       p.FIRSTNAME || ' ' || p.MIDDLENAME || ' ' || p.LASTNAME As PNAME,
+       ta.TESTREQ As LABID,
+       NVL(f.ADMISSIONNUM, ' ') AdmissionNum,
+       NVL(p.CELLNO, ' ') CELLNO,
+       m.INVNUM,
+       td.DESCR,
+       r.RESULT,
+       ta.RECEPUSER As OrderUser,
+       ta.RECEPDATETIME As OrderDate,
+       m.INVDATE As PaymentDate,
+       ta.SPECIUSER,
+       ta.DATETIMEOFCOLLECTION,
+       ta.ACCESSUSER,
+       ta.ACCESSDATETIME,
+       ta.RECEIVINGUSER,
+       ta.RECEIVINGDATETIME,
+       ta.RESULTUSER,
+       ta.RESULTDATETIME,
+       ta.VERIFYUSER,
+       ta.VERIFYDATETIME,
+       p.PATIENTTYPE,
+       v.DESCR As WARDOPD,
+       f.DOCTOR_NAME,
+       v.INFOTYPE,
+       p.GENDER,
+       p.MARSTAT,
+       p.DOB,
+       p.EMPLOYEENO,
+       p.LVISITDATE,
+       ta.PAYMENT,
+       m.INVAMT,
+       m.invamt-m.discamt as "Net Amount"
+  From LAB$TESTADVISED ta,
+       LAB$FORM        f,
+       REG$PATIENT     p,
+       LAB$TESTDETAIL  td,
+       v_mdx$location  v,
+       bms$invmaster   m,
+       bms$invdetail   d,
+       lab$testdefine  r
+ Where ta.TESTREQ = f.TESTREQ
+   And f.TESTREQ = r.TESTREQ
+   And ta.FK = f.PK
+   And ta.CO = f.CO
+   And m.invnum=d.invnum
+   And ta.TESTCODE = td.TESTCODE
+   And ta.TESTDETAILCODE = td.TESTDETAILCODE
+   And f.REGNUM = p.REGNUM
+   And f.UNIT = v.UNIT
+   And m.INVNUM = ta.INVNUM
+   And v.INFOTYPE In ('WARD', 'OPD')
+   And ta.TESTDETAILCODE = 'COVPCR'
+   And r.result in ('Not Detected (Negative)', 'Detected (Positive)')
+   And m.SRVITO = 'LAB'
+   And ta.STATUS In ('D')
+ Order By ta.VERIFYDATETIME DESC</CommandText>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+    </Query>
+    <Fields>
+      <Field Name="REGNUM">
+        <DataField>REGNUM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PNAME">
+        <DataField>PNAME</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LABID">
+        <DataField>LABID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADMISSIONNUM">
+        <DataField>ADMISSIONNUM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CELLNO">
+        <DataField>CELLNO</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="INVNUM">
+        <DataField>INVNUM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DESCR">
+        <DataField>DESCR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RESULT">
+        <DataField>RESULT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ORDERUSER">
+        <DataField>ORDERUSER</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ORDERDATE">
+        <DataField>ORDERDATE</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="PAYMENTDATE">
+        <DataField>PAYMENTDATE</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="SPECIUSER">
+        <DataField>SPECIUSER</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DATETIMEOFCOLLECTION">
+        <DataField>DATETIMEOFCOLLECTION</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ACCESSUSER">
+        <DataField>ACCESSUSER</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ACCESSDATETIME">
+        <DataField>ACCESSDATETIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="RECEIVINGUSER">
+        <DataField>RECEIVINGUSER</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RECEIVINGDATETIME">
+        <DataField>RECEIVINGDATETIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="RESULTUSER">
+        <DataField>RESULTUSER</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RESULTDATETIME">
+        <DataField>RESULTDATETIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="VERIFYUSER">
+        <DataField>VERIFYUSER</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="VERIFYDATETIME">
+        <DataField>VERIFYDATETIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="PATIENTTYPE">
+        <DataField>PATIENTTYPE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="WARDOPD">
+        <DataField>WARDOPD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DOCTOR_NAME">
+        <DataField>DOCTOR_NAME</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="INFOTYPE">
+        <DataField>INFOTYPE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="GENDER">
+        <DataField>GENDER</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="MARSTAT">
+        <DataField>MARSTAT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DOB">
+        <DataField>DOB</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="EMPLOYEENO">
+        <DataField>EMPLOYEENO</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LVISITDATE">
+        <DataField>LVISITDATE</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="PAYMENT">
+        <DataField>PAYMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="INVAMT">
+        <DataField>INVAMT</DataField>
+        <rd:TypeName>System.Double</rd:TypeName>
+      </Field>
+      <Field Name="Net_Amount">
+        <DataField>Net Amount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+  <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
+</SharedDataSet>

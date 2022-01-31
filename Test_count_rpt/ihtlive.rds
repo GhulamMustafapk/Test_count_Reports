@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ihtlive">
+  <ConnectionProperties>
+    <Extension>ORACLE</Extension>
+    <ConnectString>DATA SOURCE=ihtlive</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>82c5fe9c-e0ae-4ed0-ba12-4fd6536b85bd</DataSourceID>
+</RptDataSource>

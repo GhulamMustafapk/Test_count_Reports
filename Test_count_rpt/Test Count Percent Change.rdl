@@ -85,6 +85,84 @@
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="PercentChange">
+      <Query>
+        <DataSourceName>LABDATA</DataSourceName>
+        <CommandText>SELECT
+  --DATEdiff(DAY,[Date],GetDate()) as Days_Diff               --Dufference in days from current date
+  FORMAT (DATE, 'dd-MMM-yyyy') AS Record_date                 --latest record date
+      , DATENAME(DW,[Date]) AS WEEKDAY
+      , HIS+CYT AS Histopathology                           --Test Count of Histopathology Section
+      , HEM AS Hematology                                   --Hematology Test Count
+      , CHEM+UBIO+SER+SPC AS Chemistry
+      , PAR+MIC AS Microbiology
+      , MOL as 'Mol Biology'
+      , BBANK AS 'Blood Bank'
+      , HIS+CYT+CHEM+UBIO+SPC+SER+HEM+MIC+PAR+BBANK+MOL AS Current_Total 
+      , LAG (total , 1) OVER (ORDER BY [date]) AS Last_Total
+      , CAST(((total-LAG(total , 1) OVER(ORDER BY [date]))*100)/LAG(total , 1) OVER(ORDER BY [date] )AS decimal(5,2)) as '% change' -- formula= ((currentvalue-prevvalue)*100)/prevvalue
+      , LAG([total] , 7) OVER(ORDER BY [date]) AS  SameDayLastWeek
+      , IIF(TOTAL&gt;LAG(total , 1) OVER(ORDER BY [date]),+1,0) AS KPI
+
+FROM [LABDATA].[dbo].[testcount]
+ORDER BY DATE DESC</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="Record_date">
+          <DataField>Record_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WEEKDAY">
+          <DataField>WEEKDAY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Histopathology">
+          <DataField>Histopathology</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Hematology">
+          <DataField>Hematology</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Chemistry">
+          <DataField>Chemistry</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Microbiology">
+          <DataField>Microbiology</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Mol_Biology">
+          <DataField>Mol Biology</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Blood_Bank">
+          <DataField>Blood Bank</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Current_Total">
+          <DataField>Current_Total</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Last_Total">
+          <DataField>Last_Total</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ID__change">
+          <DataField>% change</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SameDayLastWeek">
+          <DataField>SameDayLastWeek</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="KPI">
+          <DataField>KPI</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>

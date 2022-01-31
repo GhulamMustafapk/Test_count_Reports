@@ -2,42 +2,10 @@
 <SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <DataSet Name="DataSet1">
     <Query>
-      <DataSourceReference>IHTLABDATA</DataSourceReference>
-      <CommandText>SELECT
-  testcount.[Date]
-  ,testcount.HIS
-  ,testcount.CYT
-  ,testcount.HEM
-  ,testcount.CHEM
-  ,testcount.SPC
-  ,testcount.UBIO
-  ,testcount.PAR
-  ,testcount.SER
-  ,testcount.MIC
-  ,testcount.MOL
-  ,testcount.BBANK
-  ,testcount.total
-FROM
-  testcount</CommandText>
-      <rd:DesignerState>
-        <QueryDefinition xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
-          <SelectedColumns>
-            <ColumnExpression ColumnOwner="testcount" ColumnName="Date" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="HIS" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="CYT" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="HEM" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="CHEM" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="SPC" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="UBIO" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="PAR" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="SER" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="MIC" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="MOL" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="BBANK" />
-            <ColumnExpression ColumnOwner="testcount" ColumnName="total" />
-          </SelectedColumns>
-        </QueryDefinition>
-      </rd:DesignerState>
+      <DataSourceReference>LABDATA</DataSourceReference>
+      <CommandText>SELECT        Date, HIS, CYT, HEM, CHEM, SPC, UBIO, PAR, SER, MIC, MOL, BBANK, total
+FROM            testcount</CommandText>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
     </Query>
     <Fields>
       <Field Name="Date">
@@ -46,51 +14,51 @@ FROM
       </Field>
       <Field Name="HIS">
         <DataField>HIS</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="CYT">
         <DataField>CYT</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="HEM">
         <DataField>HEM</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="CHEM">
         <DataField>CHEM</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="SPC">
         <DataField>SPC</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="UBIO">
         <DataField>UBIO</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="PAR">
         <DataField>PAR</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="SER">
         <DataField>SER</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="MIC">
         <DataField>MIC</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="MOL">
         <DataField>MOL</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="BBANK">
         <DataField>BBANK</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
       <Field Name="total">
         <DataField>total</DataField>
-        <rd:TypeName>System.Int64</rd:TypeName>
+        <rd:TypeName>System.Decimal</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>

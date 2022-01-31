@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="Workload">
+    <Query>
+      <DataSourceReference>LABDATA</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@Year">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+        <DataSetParameter Name="@Year2">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT        ID, Year, JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, TOTAL, Month_Avg, Day_Avg
+FROM            Workload
+WHERE        (Year &gt;= @Year) AND (Year &lt;= @Year2)</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
+          <SelectedColumns>
+            <ColumnExpression ColumnOwner="Workload" ColumnName="ID" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="Year" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="JAN" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="FEB" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="MAR" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="APR" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="MAY" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="JUN" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="JUL" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="AUG" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="SEP" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="OCT" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="NOV" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="DEC" />
+            <ColumnExpression ColumnOwner="Workload" ColumnName="TOTAL" />
+          </SelectedColumns>
+          <Filters>
+            <Filter Operator="&gt;=" Param="True">
+              <ColumnExpression ColumnOwner="Workload" ColumnName="Year" />
+              <FilterValue>2005</FilterValue>
+            </Filter>
+            <Filter Operator="&lt;=" Param="True">
+              <ColumnExpression ColumnOwner="Workload" ColumnName="Year" />
+            </Filter>
+          </Filters>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="ID">
+        <DataField>ID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Year">
+        <DataField>Year</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="JAN">
+        <DataField>JAN</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FEB">
+        <DataField>FEB</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="MAR">
+        <DataField>MAR</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="APR">
+        <DataField>APR</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="MAY">
+        <DataField>MAY</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="JUN">
+        <DataField>JUN</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="JUL">
+        <DataField>JUL</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AUG">
+        <DataField>AUG</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SEP">
+        <DataField>SEP</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OCT">
+        <DataField>OCT</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="NOV">
+        <DataField>NOV</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DEC">
+        <DataField>DEC</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total">
+        <DataField>TOTAL</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Year_Total">
+        <Value>=Fields!JAN.Value+Fields!FEB.Value+Fields!MAR.Value+Fields!APR.Value+Fields!MAY.Value+Fields!JUN.Value+Fields!JUL.Value+Fields!AUG.Value+Fields!SEP.Value+Fields!OCT.Value+Fields!NOV.Value+Fields!DEC.Value</Value>
+      </Field>
+      <Field Name="Month_Avg">
+        <DataField>Month_Avg</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Day_Avg">
+        <DataField>Day_Avg</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

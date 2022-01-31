@@ -16,7 +16,7 @@
     <DataSet Name="testcount">
       <SharedDataSet>
         <SharedDataSetReference>/testcount</SharedDataSetReference>
-        <rd:ReportServerUrl>http://ihtlabm/ReportServer</rd:ReportServerUrl>
+        <rd:ReportServerUrl>https://ihtlabsrv1/ReportServer</rd:ReportServerUrl>
       </SharedDataSet>
       <Fields>
         <Field Name="Date">
@@ -25,51 +25,63 @@
         </Field>
         <Field Name="HIS">
           <DataField>HIS</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="CYT">
           <DataField>CYT</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="HEM">
           <DataField>HEM</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="CHEM">
           <DataField>CHEM</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="SPC">
           <DataField>SPC</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="UBIO">
           <DataField>UBIO</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="PAR">
           <DataField>PAR</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="SER">
           <DataField>SER</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="MIC">
           <DataField>MIC</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="MOL">
           <DataField>MOL</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="BBANK">
           <DataField>BBANK</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="EntryDate">
+          <DataField>EntryDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="total">
-          <DataField>total</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>Total</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Last_total">
+          <DataField>Last_total</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="KPI">
+          <DataField>KPI</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -3023,6 +3035,6 @@ BwKpz8gTPNYC2r33Ni1dyZsr3UB5+RU0ZKQP7TweSas3BVJMguDiaLB52yNuL3z/s5C+mHtHvMV9X/xl
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://ihtlabm/reportserver</rd:ReportServerUrl>
+  <rd:ReportServerUrl>https://ihtlabsrv1/ReportServer</rd:ReportServerUrl>
   <rd:ReportID>35a1b9cb-9faa-444b-9a93-7205178e5843</rd:ReportID>
 </Report>
